@@ -1,0 +1,101 @@
+.stock-container {
+    padding: 1rem;
+    border: 2px solid #5909c3;
+    margin-bottom: 1rem;
+    width: 25%;
+    float: left;
+    margin-left: 15%;
+}
+.favourites-section {
+    margin-top: 5%;
+}
+.heading {
+    margin-left: 100px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.listView {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    max-height: 100%;
+    background-color: #ffffff;
+    color: #1d1d1d;
+    list-style: none inside;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.listView.view-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+}
+.listView .node {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    font-size: 13px;
+    border: 1px solid transparent;
+    background-color: inherit;
+}
+.listView .node:hover {
+    background-color: #e5f3ff;
+}
+.listView .node > .icon {
+    text-align: center;
+}
+.listView .node > .icon img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.listView ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none inside;
+}
+.listView .node > .data > .content,
+.listView .node > .node-data {
+    display: none;
+}
+.listView.view-content .node {
+    width: 100%;
+    min-height: 50px;
+    padding: 10px 6px 0px 0px;
+    flex-flow: row nowrap;
+}
+
+.listView.view-content .node > .data {
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 32px;
+    width: 100%;
+}
+.listView.view-content .node > .data .caption,
+.listView.view-content .node > .data .content {
+    display: block;
+    line-height: 16px;
+    height: 16px;
+}
+.listView.view-content .node > .data .content {
+    font-size: 12px;
+}
+.listView.view-content .node > .icon ~ .data {
+    padding-left: 16px;
+}
+.listView.view-content .node + .node {
+    border-top: 1px solid #000000;
+}
+.checked {
+    color: orange;
+    font-size: 24px;
+}
+.unchecked {
+    color: grey;
+    font-size: 24px;
+}
